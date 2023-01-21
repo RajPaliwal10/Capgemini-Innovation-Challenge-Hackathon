@@ -32,7 +32,16 @@ const Navbar = () => {
             >
               My Radar
             </Button>
-
+            <Button
+              component={NavLink}
+              to="/network"
+              style={({ isActive }) => {
+                return { backgroundColor: isActive ? "yellow" : "" };
+              }}
+              sx={{ color: "black", textTransform: "none" }}
+            >
+              Network
+            </Button>
             <Button
               component={NavLink}
               to="/roadmap"
@@ -53,7 +62,7 @@ const Navbar = () => {
                 }}
                 sx={{ color: "black", textTransform: "none" }}
               >
-                T-Map
+                About Us
               </Button>
             ) : (
               <Button

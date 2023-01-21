@@ -1,9 +1,9 @@
 import React from 'react';
+import Rad from '../components/radarFs';
 
 const Radar = () => {
   return (
-    
-    <h1>Radar</h1>
+    <Rad />
 
 
   )

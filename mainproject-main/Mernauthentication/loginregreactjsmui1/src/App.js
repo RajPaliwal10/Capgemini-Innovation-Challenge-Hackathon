@@ -11,6 +11,8 @@ import Navbar from "./components/Navbar";
 import Test from "./pages/Test";
 import Tmap from "./pages/Tmap";
 import Radar from "./pages/Radar";
+import Foot from "./components/Foot";
+import Network from "./components/Network";
 function App() {
   const { token } = useSelector((state) => state.auth);
   return (
@@ -21,6 +23,7 @@ function App() {
             <Route path="/roadmap" element={<Roadmap />} />
             <Route path="/tmap" element={<Tmap />} />
             <Route path="/radar" element={<Radar />} />
+            <Route path="/network" element={<Network />} />
             <Route
               path="/login"
               element={!token ? <LoginReg /> : <Navigate to="/" />}
